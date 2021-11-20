@@ -1,0 +1,38 @@
+
+snippet test2 "test2" b
+test
+endsnippet
+
+snippet test "test" b
+test
+endsnippet
+
+snippet begin "begin{env}" b
+\begin{${1:env}}
+	$2
+\end{$1}
+endsnippet
+
+snippet aufgabe "aufgabe(env)" b
+\begin{aufgabe}
+	$2
+\end{aufgabe}
+endsnippet
+
+snippet teilaufgaben "teilaufgaben(env)" b
+\begin{teilaufgaben}
+	\teilaufgabe $1
+\end{teilaufgaben}
+endsnippet
+
+snippet itemize "itemize(env)" b
+\begin{itemize}
+	\item $1
+\end{itemize}
+endsnippet
+
+snippet enummerate "enummerate(env)" b
+\begin{enummerate}
+	\item $1
+\end{enummerate}
+endsnippet
