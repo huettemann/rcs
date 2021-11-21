@@ -1,13 +1,13 @@
-set editor = "nvim"
+set editor="nvim -c 'startinsert' -c 'set tw=80 et' -c 'set wrap' '+/^$'"
 
 set folder = "imaps://nils_huettemann@mail.de@imap.mail.de:993"
 set smtp_url = "smtp://nils_huettemann@mail.de@smtp.mail.de:587"
 
+
 set from = "nils_huettemann@mail.de"
 set realname = "Nils Hüttemann"
 
-set imap_pass = "-nnnnNNNN8-"
-set smtp_pass = "-nnnnNNNN8-"
+source "gpg -d password.gpg |"
 
 set spoolfile = "+INBOX"
 set record = "+Sent"
@@ -16,8 +16,6 @@ set postponed = "+Drafts"
 
 mailboxes =INBOX =Sent =Trash =Drafts
 
-set editor="vim -c 'startinsert' -c 'set tw=80 et' -c 'set wrap' '+/^$'"
-
+source alias
 source colors.muttrc
 
-source alias
