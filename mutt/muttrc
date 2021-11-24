@@ -7,7 +7,7 @@ set smtp_url = "smtp://nils_huettemann@mail.de@smtp.mail.de:587"
 set from = "nils_huettemann@mail.de"
 set realname = "Nils Hüttemann"
 
-source "gpg -d password.gpg |"
+source "gpg -d ~/.config/mutt/password.gpg |"
 
 set spoolfile = "+INBOX"
 set record = "+Sent"
