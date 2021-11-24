@@ -18,4 +18,4 @@ mailboxes =INBOX =Sent =Trash =Drafts
 
 source alias
 source colors.muttrc
-
+source sidebar.muttrc
