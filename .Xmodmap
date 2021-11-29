@@ -2,4 +2,7 @@
 ! keycode  66 = Caps_Lock NoSymbol Caps_Lock
 
 clear Lock
+! clear Mod5
 keycode 66 = Escape NoSymbol Escape
+! keycode 92 = Escape NoSymbol Escape
+! keycode 108 = Escape NoSymbol Escape
