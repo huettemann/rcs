@@ -1,4 +1,4 @@
-set editor="nvim -c 'startinsert' -c 'set tw=80 et' -c 'set wrap' '+/^$'"
+set editor="nvim"
 
 set folder = "imaps://nils_huettemann@mail.de@imap.mail.de:993"
 set smtp_url = "smtp://nils_huettemann@mail.de@smtp.mail.de:587"
