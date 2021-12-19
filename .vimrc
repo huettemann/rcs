@@ -36,6 +36,8 @@ call plug#end()
 
 "key-remaps
 inoremap <c-space> <Nop>
+nnoremap <c-k> {:w<CR>:!pdflatex %<CR>}
+"todo: nnoremap <c-z> {:!zathura % &}
 " dont work: inoremap <c-CR> <Nop>
 
 " Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
