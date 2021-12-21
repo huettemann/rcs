@@ -1,20 +1,13 @@
 set editor="nvim"
 
-set folder = "imaps://nils_huettemann@mail.de@imap.mail.de:993"
-set smtp_url = "smtp://nils_huettemann@mail.de@smtp.mail.de:587"
+# Account nils_huettemann@mail.de
+source "~/.config/mutt/accMail.muttrc"
+folder-hook $folder 'source ~/.config/mutt/accMail.muttrc'
 
 
-set from = "nils_huettemann@mail.de"
-set realname = "Nils Hüttemann"
-
-source "gpg -d ~/.config/mutt/password.gpg |"
-
-set spoolfile = "+INBOX"
-set record = "+Sent"
-set trash = "+Trash"
-set postponed = "+Drafts"
-
-mailboxes =INBOX =Sent =Trash =Drafts
+# Account schule@nhuettemann.de
+source "~/.config/mutt/accSchule.muttrc"
+folder-hook $folder 'source ~/.config/mutt/accSchule.muttrc'
 
 source alias
 source colors.muttrc

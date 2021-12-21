@@ -32,7 +32,7 @@ sidebar_whitelist '/home/user/mailbox1'
 sidebar_whitelist '/home/user/mailbox2'
 # When searching for mailboxes containing new mail, should the search wrap
 # around when it reaches the end of the list?
-set sidebar_next_new_wrap = no
+set sidebar_next_new_wrap = yes
 # Show the Sidebar on the right-hand side of the screen
 set sidebar_on_right = no
 # The character to use as the divider between the Sidebar and the other NeoMutt
@@ -40,7 +40,7 @@ set sidebar_on_right = no
 set sidebar_divider_char = '|'
 # Enable extended mailbox mode to calculate total, new, and flagged
 # message counts for each mailbox.
-set mail_check_stats
+set mail_check_stats = yes
 # Display the Sidebar mailboxes using this format string.
 set sidebar_format = '%B%?F? [%F]?%* %?N?%N/?%S'
 # Sort the mailboxes in the Sidebar using this method:
