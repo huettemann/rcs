@@ -5,7 +5,7 @@ set smtp_url = "smtp://schule@nhuettemann.de@arche.uberspace.de:587"
 set from = "schule@nhuettemann.de"
 set realname = "Nils Hüttemann"
 
-# /* source "gpg -d ~/.config/mutt/password.gpg |" */
+source "gpg -d ~/.config/mutt/passwordSchule.gpg |"
 set imap_pass = "!Suckcklicha16!"
 set smtp_pass = "!Suckcklicha16!"
 
