@@ -1,14 +1,14 @@
 "My .vimrc
 syntax on
 
-set relativenumber
+" set relativenumber
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
 set smartindent
-set nu
+" set nu
 " set nowrap
 set smartcase
 set noswapfile
@@ -29,7 +29,7 @@ Plug 'morhetz/gruvbox'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
+" Plug 'tpope/vim-commentary'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'christoomey/vim-system-copy'
 call plug#end()
@@ -44,11 +44,13 @@ nnoremap <c-k> {:w<CR>:!pdflatex %<CR>}
 " - https://github.com/Valloric/YouCompleteMe
 " - https://github.com/nvim-lua/completion-nvim
 let g:UltiSnipsExpandTrigger="<s-tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-space>"
+let g:UltiSnipsJumpForwardTrigger="<A-space>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+let g:gruvbox_contrast_dark="soft"
 
 colorscheme gruvbox
 set background=dark
