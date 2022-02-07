@@ -26,7 +26,7 @@ set wrap linebreak
 
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
 " Plug 'tpope/vim-commentary'
@@ -43,7 +43,7 @@ nnoremap <c-k> {:w<CR>:!pdflatex %<CR>}
 " Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
 " - https://github.com/Valloric/YouCompleteMe
 " - https://github.com/nvim-lua/completion-nvim
-let g:UltiSnipsExpandTrigger="<s-tab>"
+let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<A-space>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 

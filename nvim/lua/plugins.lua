@@ -12,6 +12,8 @@ return require('packer').startup(
         use 'hrsh7th/cmp-path'
         use 'hrsh7th/cmp-cmdline'
         use 'hrsh7th/nvim-cmp'
+        use 'SirVer/ultisnips'
+        use 'quangnguyen30192/cmp-nvim-ultisnips'
     end
 )
 
