@@ -1,13 +1,17 @@
-vim.api.nvim_set_keymap('n', '<leader>kl', ':w<CR>:!pdflatex %<CR>', {noremap = true, silent = true})
+-- vim.api.nvim_set_keymap('n', '<leader>kl', ':w<CR>:!pdflatex %<CR>', {noremap = true, silent = true})
 
 local keymap = vim.api.nvim_set_keymap
-
 local opts = { noremap = true }
 
 local function nkeymap(key, map)
     keymap('n', key , map , opts)
 end
 
+-- My Personal Bindungs
+-- kompile
+nkeymap('<leader>kp', ':w<CR>:!python %<CR>')
+
+-- Lsp Bindings
 nkeymap('gd', ':lua vim.lsp.buf.definition()<cr>')
 nkeymap('gD', ':lua vim.lsp.buf.declaration()<cr>')
 nkeymap('gi', ':lua vim.lsp.buf.implementation()<cr>')
