@@ -3,7 +3,7 @@ vim.cmd('packadd packer.nvim')
 return require('packer').startup(
     function()
         use 'tpope/vim-commentary'
-        use 'wbthomason/packer.nvim' 
+        use 'wbthomason/packer.nvim'
         use 'nvim-treesitter/nvim-treesitter'
         use 'neovim/nvim-lspconfig'
         use 'williamboman/nvim-lsp-installer'
