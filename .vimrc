@@ -17,9 +17,12 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 "set formatoptions+=aw
+"set formatoptions-=ro "wird gar nicht ausgeführt Oo
+"autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 set wrap linebreak
 " set textwidth=100
 " set colorcolumn=80
+set timeoutlen=4000
 
 " highlight ColorColumn ctermbg=0 guibg=lightgrey
 

@@ -2,6 +2,7 @@ vim.cmd('packadd packer.nvim')
 
 return require('packer').startup(
     function()
+        use 'vim-airline/vim-airline'
         use 'tpope/vim-commentary'
         use 'wbthomason/packer.nvim'
         use 'nvim-treesitter/nvim-treesitter'

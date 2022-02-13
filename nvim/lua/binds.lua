@@ -11,6 +11,20 @@ end
 -- kompile
 nkeymap('<leader>kp', ':w<CR>:!python %<CR>')
 
+-- folding
+nkeymap('<leader>foo', ':foldopen!<CR>')
+nkeymap('<leader>foa', ':%foldopen!<CR>')
+nkeymap('<leader>fcc', ':foldclose<CR>')
+nkeymap('<leader>fca', ':%foldclose!<CR>')
+
+-- hlsearch
+    -- vim.g.hlstate=0
+    -- nkeymap('<leader>hl', ':if (hlstate%2 == 0) | nohlsearch | else | set hlsearch | endif | let hlstate=hlstate+1<CR>:echo "toggled visibility for hlsearch"<CR>')
+nkeymap('<leader>hl', ':set hlsearch!<CR>')
+
+
+
+
 -- Lsp Bindings
 nkeymap('gd', ':lua vim.lsp.buf.definition()<cr>')
 nkeymap('gD', ':lua vim.lsp.buf.declaration()<cr>')
