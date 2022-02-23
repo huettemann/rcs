@@ -1,13 +1,12 @@
 set editor="nvim"
 
-# Account nils_huettemann@mail.de
-source "~/.config/mutt/accMail.muttrc"
-folder-hook $folder 'source ~/.config/mutt/accMail.muttrc'
-
-
 # Account schule@nhuettemann.de
 source "~/.config/mutt/accSchule.muttrc"
 folder-hook $folder 'source ~/.config/mutt/accSchule.muttrc'
+
+# Account nils_huettemann@mail.de
+source "~/.config/mutt/accMail.muttrc"
+folder-hook $folder 'source ~/.config/mutt/accMail.muttrc'
 
 source alias
 source colors.muttrc

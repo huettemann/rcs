@@ -17,26 +17,27 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 "set formatoptions+=aw
+"set formatoptions-=ro "wird gar nicht ausgeführt Oo
+"autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 set wrap linebreak
 " set textwidth=100
 " set colorcolumn=80
+set timeoutlen=4000
 
 " highlight ColorColumn ctermbg=0 guibg=lightgrey
 
-
-call plug#begin('~/.vim/plugged')
-Plug 'morhetz/gruvbox'
-" Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'tpope/vim-surround'
-" Plug 'tpope/vim-commentary'
-Plug 'michaeljsmith/vim-indent-object'
-Plug 'christoomey/vim-system-copy'
-call plug#end()
+"Plugs put to nvim/lua/plugins.lua
+" call plug#begin('~/.vim/plugged')
+" Plug 'morhetz/gruvbox'
+" Plug 'honza/vim-snippets'
+" Plug 'tpope/vim-surround'
+" Plug 'michaeljsmith/vim-indent-object'
+" Plug 'christoomey/vim-system-copy'
+" call plug#end()
 
 "key-remaps
 inoremap <c-space> <Nop>
-nnoremap <c-k> {:w<CR>:!pdflatex %<CR>}
+" nnoremap <c-k> {w<CR>:!pdflatex %<CR>}
 "todo: nnoremap <c-z> {:!zathura % &}
 " dont work: inoremap <c-CR> <Nop>
 
@@ -44,8 +45,8 @@ nnoremap <c-k> {:w<CR>:!pdflatex %<CR>}
 " - https://github.com/Valloric/YouCompleteMe
 " - https://github.com/nvim-lua/completion-nvim
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<A-space>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<c-tab>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"

@@ -21,14 +21,16 @@ lsp_installer.on_server_ready(function(server)
   local opts = {}
   if server.name == "sumneko_lua" then
     opts = {
+      -- cmd = {"/home/huette/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/bin/main.lua", "-E", "/home/huette/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/bin/main.lua"};
       settings = {
         Lua = {
+          -- runtime = {version = 'LuaJIT', path = vim.split(package.path, ';')},
           diagnostics = {
             globals = { 'vim', 'use' }
           },
           --workspace = {
             -- Make the server aware of Neovim runtime files
-            --library = {[vim.fn.expand('$VIMRUNTIME/lua')] = true, [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true}
+            -- library = {[vim.fn.expand('$VIMRUNTIME/lua')] = true, [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true}
           --}
         }
       }
@@ -94,3 +96,5 @@ end)
   require('lspconfig')['sumneko_lua'].setup {
     capabilities = capabilities
   }
+
+
