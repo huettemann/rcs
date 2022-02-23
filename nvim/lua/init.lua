@@ -6,7 +6,7 @@ local configs = require'nvim-treesitter.configs'
 configs.setup {
 ensure_installed = "maintained", -- Only use parsers that are maintained
 highlight = { -- enable highlighting
-  enable = true, 
+  enable = true,
 },
 indent = {
   enable = true, -- default is disabled anyways
@@ -63,9 +63,9 @@ end)
     },
     sources = cmp.config.sources({
       { name = 'nvim_lsp' },
-      { name = 'vsnip' }, -- For vsnip users.
+      -- { name = 'vsnip' }, -- For vsnip users.
       -- { name = 'luasnip' }, -- For luasnip users.
-      -- { name = 'ultisnips' }, -- For ultisnips users.
+      { name = 'ultisnips' }, -- For ultisnips users.
       -- { name = 'snippy' }, -- For snippy users.
     }, {
       { name = 'buffer' },
