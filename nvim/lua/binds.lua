@@ -10,6 +10,7 @@ end
 -- My Personal Bindungs
 -- kompile
 nkeymap('<leader>kp', ':w<CR>:!python %<CR>')
+nkeymap('<leader>kl', ':w<CR>:!pdflatex %<CR>')
 
 -- folding
 nkeymap('<leader>foo', ':foldopen!<CR>')

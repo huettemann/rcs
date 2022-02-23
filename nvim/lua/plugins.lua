@@ -15,6 +15,11 @@ return require('packer').startup(
         use 'hrsh7th/nvim-cmp'
         use 'SirVer/ultisnips'
         use 'quangnguyen30192/cmp-nvim-ultisnips'
+        use 'morhetz/gruvbox'
+        use 'honza/vim-snippets'
+        use 'tpope/vim-surround'
+        use 'michaeljsmith/vim-indent-object'
+        use 'christoomey/vim-system-copy'
     end
 )
 
