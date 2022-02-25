@@ -19,7 +19,34 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 require("awful.hotkeys_popup.keys")
 -- freedesktop
 local freedesktop = require("freedesktop")
+-- My Widgets 
+local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
+local mysystray = wibox.widget.systray()
+mysystray:set_base_size(20)
+mytextbox = wibox.widget{
+    text = "foo",
+    align = 'center',
+    widget = wibox.widget.textbox
+}
+mytextbox:connect_signal("button::press", function (_,_,_,button)
+    if (button ==1) then naughty.notify{
+        title = "Test",
+        text = "yeah",
+    }
+        
+    end
 
+end)
+
+myseperator = wibox.widget{
+    orientation = "vertical",
+    thickness = 50,
+    color = "#00000000",
+    forced_width = 20,
+    border_width = 2,
+    visible = true,
+    widget = wibox.widget.seperator,
+}
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -122,9 +149,10 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 
 -- {{{ Wibar
 -- Create a textclock widget
-mytextclock = wibox.widget.textclock()
+mytextclock = wibox.widget.textclock(" %a %d %b | %H:%M ",_,_)
 -- Create a calendar widget (htt)
-mycalender = wibox.widget.calendar.month(os.date('*t'))
+local month_calendar = awful.widget.calendar_popup.year()
+month_calendar:attach(mytextclock, 'tr', {on_hover = false})
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
@@ -228,7 +256,11 @@ awful.screen.connect_for_each_screen(function(s)
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
             -- mykeyboardlayout,
-            wibox.widget.systray(),
+            -- wibox.widget.systray(),
+            mytextbox,
+            myseperator,
+            mysystray,
+            battery_widget(),
             mytextclock,
             s.mylayoutbox,
         },
@@ -585,12 +617,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 -- My fckn config stuff
 -- gaps
--- beautiful.useless_gap = 5
-
--- Hex converter, for RGB colors
-function hex(inp)
-    return inp > 16 and string.format("%X", inp) or string.format("0%X", inp)
-end
+-- beautiful.useless_gap = 3
 
 -- Autorun programs
 autorun = true
@@ -605,32 +632,3 @@ if autorun then
        awful.util.spawn(autorunApps[app])
    end
 end
-
--- Battery monitor
--- mybattmon = widget({ type = "textbox", name = "mybattmon", align = "right" })
--- function battery_status ()
---     local output={} -- output buffer
---     local fd=io.popen("acpitool -b", "r") -- list present batteries
---     local line=fd:read()
---     while line do -- there might be several batteries
---         local battery_num = string.match(line, "Battery \#(%d+)")
---         local battery_load = string.match(line, " (%d*)\.%d+%%")
---         local time_rem = string.match(line, "(%d+\:%d+)\:%d+")
---         if battery_num and battery_load and time_rem then
---             table.insert(output, "<span color=\"#"
---                 .. hex(170 * (100 - tonumber(battery_load)) / 100)
---                 .. hex(170 * tonumber(battery_load) / 100)
---                 .. "00\">" .. time_rem .. " " .. battery_load .. "%</span>")
---         elseif battery_num and battery_load then -- remaining time unavailable
---             table.insert(output, "<span color=\"#00AA00\">" .. battery_load.."%</span>")
---         end
---         line=fd:read() -- read next line
---     end
---     return table.concat(output," ")
--- end
--- mybattmon.text = " " .. battery_status() .. " "
--- my_battmon_timer=timer({timeout=17})
--- my_battmon_timer:add_signal("timeout", function()
---     mybattmon.text = " " .. battery_status() .. " "
--- end)
--- my_battmon_timer:start()
