@@ -47,7 +47,10 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "gtk/theme.lua")
+-- beautiful.init(gears.filesystem.get_themes_dir() .. "wombat/theme.lua")
+local theme_name = "htt_wombat"
+local theme_path = string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"),theme_name)
+beautiful.init(theme_path)
 
 -- This is used later as the default terminal and editor to run.
 terminal = "terminator"
@@ -63,7 +66,6 @@ modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
-    awful.layout.suit.floating,
     awful.layout.suit.tile,
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
@@ -71,11 +73,12 @@ awful.layout.layouts = {
     awful.layout.suit.fair,
     awful.layout.suit.fair.horizontal,
     awful.layout.suit.spiral,
-    awful.layout.suit.spiral.dwindle,
+    -- awful.layout.suit.spiral.dwindle,
     awful.layout.suit.max,
     awful.layout.suit.max.fullscreen,
-    awful.layout.suit.magnifier,
-    awful.layout.suit.corner.nw,
+    awful.layout.suit.floating,
+    -- awful.layout.suit.magnifier,
+    -- awful.layout.suit.corner.nw,
     -- awful.layout.suit.corner.ne,
     -- awful.layout.suit.corner.sw,
     -- awful.layout.suit.corner.se,
@@ -120,6 +123,8 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 -- {{{ Wibar
 -- Create a textclock widget
 mytextclock = wibox.widget.textclock()
+-- Create a calendar widget (htt)
+mycalender = wibox.widget.calendar.month(os.date('*t'))
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
@@ -222,7 +227,7 @@ awful.screen.connect_for_each_screen(function(s)
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            mykeyboardlayout,
+            -- mykeyboardlayout,
             wibox.widget.systray(),
             mytextclock,
             s.mylayoutbox,
@@ -585,6 +590,20 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- Hex converter, for RGB colors
 function hex(inp)
     return inp > 16 and string.format("%X", inp) or string.format("0%X", inp)
+end
+
+-- Autorun programs
+autorun = true
+autorunApps =
+{
+   "picom",
+   "nextcloud",
+   "keepassxc",
+}
+if autorun then
+   for app = 1, #autorunApps do
+       awful.util.spawn(autorunApps[app])
+   end
 end
 
 -- Battery monitor
