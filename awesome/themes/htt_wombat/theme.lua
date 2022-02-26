@@ -15,7 +15,7 @@ end
 sharedicons   = shared .. "/icons"
 sharedthemes  = shared .. "/themes"
 themes        = config .. "/themes"
-themename     = "/wombat"
+themename     = "/htt_wombat"
 if not awful.util.file_readable(themes .. themename .. "/theme.lua") then
        themes = sharedthemes
 end
