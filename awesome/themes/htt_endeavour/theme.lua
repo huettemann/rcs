@@ -41,7 +41,7 @@ end
 --}}}
 
 -- {{{ Styles
-theme.font      = "sans 8"
+theme.font      = "sans 9"
 
 -- {{{ Colors
 theme.fg_normal = "#cccccc"
@@ -58,8 +58,8 @@ theme.border_width  = "1"
 --theme.border_normal = "#34353488"
 --theme.border_normal = "#2d4113"
 --theme.border_normal = "#586c2d"
-theme.border_normal = "#727352"
-theme.border_focus  = "#586c2d"
+theme.border_normal = "#458588"
+theme.border_focus  = "#dc8add"
 --theme.border_focus  = "#a2bf36"
 --theme.border_focus  = "#6886c1"
 theme.border_marked = "#CC9393"
