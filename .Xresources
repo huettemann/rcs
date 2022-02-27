@@ -1,7 +1,7 @@
 !My Settings
 !! Transparency (0-1):
 st.alpha: 0.7
-st.alphaOffset: 0.7
+st.alphaOffset: -0.1
 
 !! Set a default font and font size as below:
 /* st.font: Monospace-11; */
