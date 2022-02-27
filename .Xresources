@@ -6,19 +6,7 @@ st.alphaOffset: -0.1
 !! Set a default font and font size as below:
 /* st.font: Monospace-11; */
 st.font: Source Code Pro Medium:pixelsize=15:antialias=true:autohint=true
->>>>>>> bb784eeff4fd9ab08e08049b14d8d27e09936693
 
-! st.termname: st-256color
-! st.borderpx: 2
-
-!! Set the background, foreground and cursor colors as below:
-
-<<<<<<< HEAD
-!! gruvbox:
-*.color0: #1d2021
-*.color1: #cc241d
-*.color2: #98971a
-=======
 !! my_gruvbox_adaptation:
 *.color0: #1d2021
 *.color1: #cc241d
