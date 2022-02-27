@@ -75,7 +75,7 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 -- beautiful.init(gears.filesystem.get_themes_dir() .. "wombat/theme.lua")
-local theme_name = "htt_wombat"
+local theme_name = "htt_endeavour"
 local theme_path = string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"),theme_name)
 beautiful.init(theme_path)
 
