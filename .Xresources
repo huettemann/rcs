@@ -15,7 +15,7 @@ st.font: Source Code Pro Medium:pixelsize=15:antialias=true:autohint=true
 !! my_gruvbox_adaptation:
 *.color0: #1d2021
 *.color1: #cc241d
-*.color2: #c061cb
+*.color2: #dc8add
 *.color3: #d79921
 *.color4: #458588
 *.color5: #b16286
