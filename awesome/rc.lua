@@ -626,6 +626,9 @@ autorunApps =
    "picom",
    "nextcloud",
    "keepassxc",
+   -- "polkit-gnome-authentification-agent-1",
+   -- "nm-applet",
+   -- "xapp-sn-watcher",
 }
 if autorun then
    for app = 1, #autorunApps do

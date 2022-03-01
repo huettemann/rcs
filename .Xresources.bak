@@ -1,55 +1,53 @@
+!My Settings
 !! Transparency (0-1):
-st.alpha: 0.5
-st.alphaOffset: 0.3
+st.alpha: 0.65
+st.alphaOffset: -0.1
+
+!! Set a default font and font size as below:
+/* st.font: Monospace-11; */
+st.font: Source Code Pro Medium:pixelsize=15:antialias=true:autohint=true
 
 
-! special colors
-*.foreground:  #d0c8c6
-*.background:  #3b3228
-*.cursorColor:  #d0c8c6
-! black
-*.color0:      #3b3228
-*.color8:      #7e705a
-! red
-*.color1:      #cb6077
-*.color9:      #cb6077
-! green
-*.color2:      #beb55b
-*.color10:     #beb55b
-! yellow
-*.color3:      #f4bc87
-*.color11:     #f4bc87
-! blue
-*.color4:      #8ab3b5
-*.color12:     #8ab3b5
-! magenta
-*.color5:      #a89bb9
-*.color13:     #a89bb9
-! cyan
-*.color6:      #7bbda4
-*.color14:     #7bbda4
-! white
-*.color7:      #d0c8c6
-*.color15:     #d0c8c6
+!! my_endeavouros_satelite 
+*.foreground:       #ffffff
+*.background:       #07070a
+*.color0: #07070a
+*color0:  #07070a
+*.color1: #815772
+*color1:  #815772
+*.color2: #526e99
+*color2:  #526e99
+*.color3: #568593
+*color3:  #568593
+*.color4: #5d8a9b
+*color4:  #5d8a9b
+*.color5: #6a6e8b
+*color5:  #6a6e8b
+*.color6: #637d95
+*color6:  #637d95
+*.color7: #838384
+*color7:  #838384
+*.color8: #454547
+*color8:  #454547
+*.color9: #AD7498
+*color9:  #AD7498
+*.color10: #6E93CC
+*color10:  #6E93CC
+*.color11: #73B2C4
+*color11:  #73B2C4
+*.color12: #7DB8CF
+*color12:  #7DB8CF
+*.color13: #8E93BA
+*color13:  #8E93BA
+*.color14: #85A7C7
+*color14:  #85A7C7
+*.color15: #c1c1c1
+*color15:  #c1c1c1
 
-URxvt*scrollBar:         false
-URxvt*scrollBar_right:   false
-
-URxvt*transparent:       false
-
-URxvt*depth: 32
-URxvt.background: [70]#3b3228
-
-URxvt.font: xft:Source Code Pr:size=11
-URxvt.letterSpace: 0
-
-*antialias:  true
-*autohint:   false
-
-/* !! gruvbox: */
+!! my_gruvbox_adaptation:
 /* *.color0: #1d2021 */
 /* *.color1: #cc241d */
-/* *.color2: #98971a */
+/* *.color2: #dc8add */
 /* *.color3: #d79921 */
 /* *.color4: #458588 */
 /* *.color5: #b16286 */
@@ -57,15 +55,16 @@ URxvt.letterSpace: 0
 /* *.color7: #a89984 */
 /* *.color8: #928374 */
 /* *.color9: #fb4934 */
-/* *.color10: #b8bb26 */
+/* *.color10: #dc8add */
 /* *.color11: #fabd2f */
 /* *.color12: #83a598 */
-/* *.color13: #d3869b */
+/* *.color13: #dc8add */
 /* *.color14: #8ec07c */
 /* *.color15: #ebdbb2 */
-/* *.background: black */
-/* *.foreground: white */
-/* *.cursorColor: white */
+/* *.background: #282830 */
+/* *.foreground: #ebdbb2 */
+/* /1* *.foreground: white *1/ */
+/* *.cursorColor: #ff7f7f */
 
 /* /1* !! gruvbox light: *1/ */
 /* *.color0: #fbf1c7 */
