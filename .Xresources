@@ -1,6 +1,6 @@
 !My Settings
 !! Transparency (0-1):
-st.alpha: 0.7
+st.alpha: 0.65
 st.alphaOffset: -0.1
 
 !! Set a default font and font size as below:
@@ -11,7 +11,6 @@ st.font: Source Code Pro Medium:pixelsize=15:antialias=true:autohint=true
 *.color0: #1d2021
 *.color1: #cc241d
 *.color2: #dc8add
->>>>>>> bb784eeff4fd9ab08e08049b14d8d27e09936693
 *.color3: #d79921
 *.color4: #458588
 *.color5: #b16286
@@ -19,28 +18,16 @@ st.font: Source Code Pro Medium:pixelsize=15:antialias=true:autohint=true
 *.color7: #a89984
 *.color8: #928374
 *.color9: #fb4934
-<<<<<<< HEAD
-*.color10: #b8bb26
-*.color11: #fabd2f
-*.color12: #83a598
-*.color13: #d3869b
-*.color14: #8ec07c
-*.color15: #ebdbb2
-*.background: black
-*.foreground: white
-*.cursorColor: white
-=======
 *.color10: #dc8add
 *.color11: #fabd2f
 *.color12: #83a598
 *.color13: #dc8add
 *.color14: #8ec07c
 *.color15: #ebdbb2
-*.background: #282828
-/* *.foreground: #ebdbb2 */
-*.foreground: white
+*.background: #282830
+*.foreground: #ebdbb2
+/* *.foreground: white */
 *.cursorColor: #ff7f7f
->>>>>>> bb784eeff4fd9ab08e08049b14d8d27e09936693
 
 /* /1* !! gruvbox light: *1/ */
 /* *.color0: #fbf1c7 */
