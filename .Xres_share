@@ -1,6 +1,6 @@
 !My Settings
 !! Transparency (0-1):
-st.alpha: 0.65
+st.alpha: 0.8
 st.alphaOffset: -0.1
 
 !! Set a default font and font size as below:
@@ -8,43 +8,55 @@ st.alphaOffset: -0.1
 st.font: Source Code Pro Medium:pixelsize=15:antialias=true:autohint=true
 
 
-!! my_endeavouros_satelite 
-*.foreground:       #ffffff
-*.background:       #07070a
-*.color0: #07070a
-*color0:  #07070a
-*.color1: #815772
-*color1:  #815772
-*.color2: #526e99
-*color2:  #526e99
-*.color3: #568593
-*color3:  #568593
-*.color4: #5d8a9b
-*color4:  #5d8a9b
-*.color5: #6a6e8b
-*color5:  #6a6e8b
-*.color6: #637d95
-*color6:  #637d95
-*.color7: #838384
-*color7:  #838384
-*.color8: #454547
-*color8:  #454547
-*.color9: #AD7498
-*color9:  #AD7498
-*.color10: #6E93CC
-*color10:  #6E93CC
-*.color11: #73B2C4
-*color11:  #73B2C4
-*.color12: #7DB8CF
-*color12:  #7DB8CF
-*.color13: #8E93BA
-*color13:  #8E93BA
-*.color14: #85A7C7
-*color14:  #85A7C7
-*.color15: #c1c1c1
-*color15:  #c1c1c1
+/* ! Color meanings         */
+/* ! black dark/light       */
+/* *color0:                 */
+/* *color8:                 */
+/* ! red dark/light         */
+/* *color1:                 */
+/* *color9:                 */
+/* ! green dark/light       */
+/* *color2:                 */
+/* *color10:                */
+/* ! yellow dark/light      */
+/* *color3:                 */
+/* *color11:                */
+/* ! blue dark/light        */
+/* *color4:                 */
+/* *color12:                */
+/* ! magenta dark/light     */
+/* *color5:                 */
+/* *color13:                */
+/* ! cyan dark/light        */
+/* *color6:                 */
+/* *color14:                */
+/* ! white dark/light       */
+/* *color7:                 */
+/* *color15:                */
 
-!! my_gruvbox_adaptation:
+!! my_endeavour TEST:
+*.color0: #282828
+*.color1: #ff7f7f
+*.color2: #77dd77
+*.color3: #fd7992
+*.color4: #7fbaff
+*.color5: #7f3fbf
+*.color6: #7f7fff
+*.color7: #cdccdb
+*.color8: #aaaaaa
+*.color9: #ff7f7f
+*.color10: #affff6
+*.color11: #f7bb60
+*.color12: #79c5d6
+*.color13: #7f3fbf
+*.color14: #7f7fff
+*.color15: #e3e3ea
+*.background: #282828
+/* *.foreground: #ebdbb2 */
+*.foreground: #ebdbb2
+*.cursorColor: #ff7f7f
+
+/* !! my_gruvbox_adaptation: */
 /* *.color0: #1d2021 */
 /* *.color1: #cc241d */
 /* *.color2: #dc8add */
@@ -61,9 +73,9 @@ st.font: Source Code Pro Medium:pixelsize=15:antialias=true:autohint=true
 /* *.color13: #dc8add */
 /* *.color14: #8ec07c */
 /* *.color15: #ebdbb2 */
-/* *.background: #282830 */
-/* *.foreground: #ebdbb2 */
-/* /1* *.foreground: white *1/ */
+/* *.background: #282828 */
+/* /1* *.foreground: #ebdbb2 *1/ */
+/* *.foreground: white */
 /* *.cursorColor: #ff7f7f */
 
 /* /1* !! gruvbox light: *1/ */
