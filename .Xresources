@@ -7,27 +7,76 @@ st.alphaOffset: -0.1
 /* st.font: Monospace-11; */
 st.font: Source Code Pro Medium:pixelsize=15:antialias=true:autohint=true
 
-!! my_gruvbox_adaptation:
-*.color0: #1d2021
-*.color1: #cc241d
-*.color2: #dc8add
-*.color3: #d79921
-*.color4: #458588
-*.color5: #b16286
-*.color6: #689d6a
-*.color7: #a89984
-*.color8: #928374
-*.color9: #fb4934
-*.color10: #dc8add
-*.color11: #fabd2f
-*.color12: #83a598
-*.color13: #dc8add
-*.color14: #8ec07c
-*.color15: #ebdbb2
+
+/* ! Color meanings         */
+/* ! black dark/light       */
+/* *color0:                 */
+/* *color8:                 */
+/* ! red dark/light         */
+/* *color1:                 */
+/* *color9:                 */
+/* ! green dark/light       */
+/* *color2:                 */
+/* *color10:                */
+/* ! yellow dark/light      */
+/* *color3:                 */
+/* *color11:                */
+/* ! blue dark/light        */
+/* *color4:                 */
+/* *color12:                */
+/* ! magenta dark/light     */
+/* *color5:                 */
+/* *color13:                */
+/* ! cyan dark/light        */
+/* *color6:                 */
+/* *color14:                */
+/* ! white dark/light       */
+/* *color7:                 */
+/* *color15:                */
+
+!! my_endeavour TEST:
+*.color0: #282828
+*.color1: #ff7f7f
+*.color2: #77dd77
+*.color3: #fd7992
+*.color4: #7fbaff
+*.color5: #7f3fbf
+*.color6: #7f7fff
+*.color7: #cdccdb
+*.color8: #aaaaaa
+*.color9: #ff7f7f
+*.color10: #affff6
+*.color11: #f7bb60
+*.color12: #79c5d6
+*.color13: #7f3fbf
+*.color14: #7f7fff
+*.color15: #e3e3ea
 *.background: #282828
 /* *.foreground: #ebdbb2 */
-*.foreground: white
+*.foreground: #e3e3ea
 *.cursorColor: #ff7f7f
+
+/* !! my_gruvbox_adaptation: */
+/* *.color0: #1d2021 */
+/* *.color1: #cc241d */
+/* *.color2: #dc8add */
+/* *.color3: #d79921 */
+/* *.color4: #458588 */
+/* *.color5: #b16286 */
+/* *.color6: #689d6a */
+/* *.color7: #a89984 */
+/* *.color8: #928374 */
+/* *.color9: #fb4934 */
+/* *.color10: #dc8add */
+/* *.color11: #fabd2f */
+/* *.color12: #83a598 */
+/* *.color13: #dc8add */
+/* *.color14: #8ec07c */
+/* *.color15: #ebdbb2 */
+/* *.background: #282828 */
+/* /1* *.foreground: #ebdbb2 *1/ */
+/* *.foreground: white */
+/* *.cursorColor: #ff7f7f */
 
 /* /1* !! gruvbox light: *1/ */
 /* *.color0: #fbf1c7 */
