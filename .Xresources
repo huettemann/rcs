@@ -1,6 +1,6 @@
 !My Settings
 !! Transparency (0-1):
-st.alpha: 0.8
+st.alpha: 0.5
 st.alphaOffset: -0.1
 
 !! Set a default font and font size as below:
@@ -53,7 +53,7 @@ st.font: Source Code Pro Medium:pixelsize=15:antialias=true:autohint=true
 *.color15: #e3e3ea
 *.background: #282828
 /* *.foreground: #ebdbb2 */
-*.foreground: #ebdbb2
+*.foreground: #e3e3ea
 *.cursorColor: #ff7f7f
 
 /* !! my_gruvbox_adaptation: */

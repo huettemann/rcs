@@ -39,30 +39,52 @@ else
   theme.wallpaper = wallpaper4
 end
 --}}}
+--
+--colors from my xres (someday dyn)
+black_dark = "#282828"
+black_light = "#aaaaaa"
+red_dark = "#ff7f7f"
+red_light = "#ff7f7f"
+green_dark = "#77dd77"
+green_light = "#affff6"
+yellow_dark = "#fd7992"
+yellow_light = "#f7bb60"
+blue_dark = "#7fbaff"
+blue_light = "#79c5d6"
+magenta_dark = "#7f3fbf"
+magenta_light = "#7f3fbf"
+cyan_dark = "#7f7fff"
+cyan_light = "#7f3fbf"
+white_dark = "#cdccdb"
+white_light = "#e3e3ea"
+background_my = "#282828"
+foreground_my = "#e3e3ea"
+cursorColor_my =  "#ff7f7f"
 
 -- {{{ Styles
 theme.font      = "sans 9"
 
 -- {{{ Colors
-theme.fg_normal = "#cccccc"
-theme.fg_focus  = "#8d8a4b"
-theme.fg_urgent = "#929392"
-theme.bg_normal = "#1c1d1c88"
-theme.bg_focus  = "#0c0d0c88"
-theme.bg_urgent = "#34353488"
+theme.fg_normal = foreground_my
+theme.fg_focus  = foreground_my
+theme.fg_urgent = magenta_dark
+theme.bg_normal = background_my
+theme.bg_focus  = magenta_dark
+theme.bg_urgent = red_light
 -- }}}
 
 -- {{{ Borders
 theme.border_width  = "1"
+theme.useless_gap = "0"
 --theme.border_width  = "2"
 --theme.border_normal = "#34353488"
 --theme.border_normal = "#2d4113"
 --theme.border_normal = "#586c2d"
-theme.border_normal = "#458588"
-theme.border_focus  = "#dc8add"
+theme.border_normal = black_light
+theme.border_focus  = magenta_dark
 --theme.border_focus  = "#a2bf36"
 --theme.border_focus  = "#6886c1"
-theme.border_marked = "#CC9393"
+theme.border_marked = red_dark
 -- }}}
 
 -- {{{ Titlebars
@@ -78,6 +100,7 @@ theme.titlebar_bg_normal = "#3F3F3F"
 -- tooltip_[font|opacity|fg_color|bg_color|border_width|border_color]
 -- Example:
 --theme.taglist_bg_focus = "#CC9393"
+
 -- }}}
 
 -- {{{ Widgets
@@ -112,7 +135,7 @@ theme.taglist_squares_unsel = sharedthemes .. "/zenburn/taglist/squarez.png"
 -- }}}
 
 -- {{{ Misc
-theme.awesome_icon           = themedir .. "/awesome-icon.png"
+theme.awesome_icon           = themedir .. "/endeavouros-icon.png"
 theme.menu_submenu_icon      = sharedthemes .. "/default/submenu.png"
 theme.tasklist_floating_icon = sharedthemes .. "/default/tasklist/floatingw.png"
 -- }}}
