@@ -81,3 +81,28 @@ endsnippet
 snippet glqq "germanquotes" b
 \glqq $1 \grqq \ 
 endsnippet
+
+snippet topic "topic für Schulprotokolle" b
+\topic{$1}{$2}
+	\begin{itemize}
+		\item $3
+	\end{itemize}
+endsnippet
+
+snippet assign "struktogramm assign" B
+\assign{$1}
+endsnippet
+	
+snippet ifthenelse "struktogramm ifthenelse" B
+\ifthenelse{5}{5}{$1}{Ja}{Nein}
+	$2
+\change
+	$3
+\ifend
+endsnippet
+
+snippet while "struktogramm while" B
+\while{$1}
+	$2
+\whileend
+endsnippet
