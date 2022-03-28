@@ -11,6 +11,7 @@ end
 -- kompile
 nkeymap('<leader>kp', ':w<CR>:!python %<CR>')
 nkeymap('<leader>kl', ':w<CR>:!pdflatex %<CR>')
+nkeymap('<leader>kj', ':w<CR>:!javac %<CR>:!java %:r<CR>')
 
 -- folding
 nkeymap('<leader>foo', ':foldopen!<CR>')

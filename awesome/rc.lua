@@ -22,7 +22,7 @@ local freedesktop = require("freedesktop")
 -- My Widgets 
 local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
 local mysystray = wibox.widget.systray()
-mysystray:set_base_size(20)
+-- mysystray:set_base_size(20)
 mytextbox = wibox.widget{
     text = "foo",
     align = 'center',
@@ -257,7 +257,7 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             -- mykeyboardlayout,
             -- wibox.widget.systray(),
-            mytextbox,
+            -- mytextbox,
             myseperator,
             mysystray,
             battery_widget(),
@@ -626,6 +626,7 @@ autorunApps =
    "picom",
    "nextcloud",
    "keepassxc",
+   "nm-applet"
    -- "polkit-gnome-authentification-agent-1",
    -- "nm-applet",
    -- "xapp-sn-watcher",
