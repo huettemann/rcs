@@ -16,7 +16,7 @@ snippet teil "teilaufgaben(env)" b
 \end{teilaufgaben}
 endsnippet
 
-snippet item "itemize(env)" b
+snippet itemize "itemize(env)" b
 \begin{itemize}
 	\item $1
 \end{itemize}
@@ -82,6 +82,51 @@ snippet glqq "germanquotes" b
 \glqq $1 \grqq \ 
 endsnippet
 
+snippet erw "erwartung" b
+\erwartung{${1:Beschreibung}}{${2:Punkte}}
+endsnippet
+
+snippet erwartungen "erwartungen env" b
+	\begin{erwartungen}
+		\erwartung{${1:Beschreibung}}{${2:Punkte}}
+	\end{erwartungen}
+endsnippet
+
+snippet enum-abi "enumeration im Abitur-Style usepackage{enumerate} needed" B
+	\begin{enumerate}[(1)]
+		\setlength{\leftmargin}{0pt}
+		\item $1
+	\end{enumerate}
+endsnippet
+
+snippet vekd "My Vektor 3dim" iB
+\vekd{$1}{$2}{$3}
+endsnippet
+
+snippet vekz "My Vektor 2dim" iB
+\vekz{$1}{$2}
+endsnippet
+
+snippet mathbbR "real Number" iB
+\mathbb{R}
+endsnippet
+
+snippet inmathR "in real Number" iB
+\in \mathbb{R}
+endsnippet
+
+snippet punkte-abi "Punkte Teilaufgaben im Abi" B
+
+\vspace{0.2cm}
+\hfill\small{($1 Punkte)}
+\vspace{0.9cm}
+
+endsnippet
+
+snippet { "{ und } automatisch" iA
+{$1}
+endsnippet
+
 snippet topic "topic für Schulprotokolle" b
 \topic{$1}{$2}
 	\begin{itemize}
@@ -105,4 +150,12 @@ snippet while "struktogramm while" B
 \while{$1}
 	$2
 \whileend
+endsnippet
+
+snippet pkt "Punkt 3-dim" i
+$$1($2|$3|$4)$
+endsnippet
+
+snippet overr "overrightarrow" i	
+\overrightarrow{$1}
 endsnippet
