@@ -8,6 +8,8 @@ local function nkeymap(key, map)
 end
 
 -- My Personal Bindungs
+-- pdf preview
+nkeymap('<leader>pdf', ':!zathura %:r.pdf & <CR><CR>')
 -- kompile
 nkeymap('<leader>kp', ':w<CR>:!python %<CR>')
 nkeymap('<leader>kl', ':w<CR>:!pdflatex %<CR>')
