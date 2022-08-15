@@ -619,7 +619,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- gaps
 -- beautiful.useless_gap = 3
 
--- Autorun programs Autostart
+-- Autorun autostart programs
 autorun = true
 autorunApps =
 {
@@ -627,7 +627,9 @@ autorunApps =
    "nextcloud",
    "keepassxc",
    "nm-applet",
-   "xfce4-power-manager"
+   "xfce4-power-manager",
+   "seaf-cli start",
+
    -- "polkit-gnome-authentification-agent-1",
    -- "nm-applet",
    -- "xapp-sn-watcher",
