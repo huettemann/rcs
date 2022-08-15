@@ -39,10 +39,10 @@ mytextbox:connect_signal("button::press", function (_,_,_,button)
 end)
 
 myseperator = wibox.widget{
-    orientation = "vertical",
-    thickness = 50,
-    color = "#00000000",
-    forced_width = 20,
+    -- orientation = "vertical",
+    thickness = 10,
+    color = "#FFFFFF",
+    -- forced_width = 20,
     border_width = 2,
     visible = true,
     widget = wibox.widget.seperator,
@@ -619,14 +619,15 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- gaps
 -- beautiful.useless_gap = 3
 
--- Autorun programs
+-- Autorun programs Autostart
 autorun = true
 autorunApps =
 {
    "picom",
    "nextcloud",
    "keepassxc",
-   "nm-applet"
+   "nm-applet",
+   "xfce4-power-manager"
    -- "polkit-gnome-authentification-agent-1",
    -- "nm-applet",
    -- "xapp-sn-watcher",
