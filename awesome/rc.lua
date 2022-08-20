@@ -39,10 +39,10 @@ mytextbox:connect_signal("button::press", function (_,_,_,button)
 end)
 
 myseperator = wibox.widget{
-    orientation = "vertical",
-    thickness = 50,
-    color = "#00000000",
-    forced_width = 20,
+    -- orientation = "vertical",
+    thickness = 10,
+    color = "#FFFFFF",
+    -- forced_width = 20,
     border_width = 2,
     visible = true,
     widget = wibox.widget.seperator,
@@ -627,7 +627,8 @@ autorunApps =
    "nextcloud",
    "keepassxc",
    "nm-applet",
-   "seaf-cli start"
+   "xfce4-power-manager",
+   "seaf-cli start",
 
    -- "polkit-gnome-authentification-agent-1",
    -- "nm-applet",
