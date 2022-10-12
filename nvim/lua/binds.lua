@@ -25,6 +25,13 @@ nkeymap('<leader>fca', ':%foldclose!<CR>')
     -- vim.g.hlstate=0
     -- nkeymap('<leader>hl', ':if (hlstate%2 == 0) | nohlsearch | else | set hlsearch | endif | let hlstate=hlstate+1<CR>:echo "toggled visibility for hlsearch"<CR>')
 nkeymap('<leader>hl', ':set hlsearch!<CR>')
+-- spellcheck
+-- nkeymap('<leader>cs', ':set spell spelllang=de<CR>')
+-- nkeymap('<leader>ucs', ':set nospell<CR>')
+-- nkeymap('<leader>ces', ':set spell spelllang=en<CR>')
+keymap('n','<leader>cs', ':set spell spelllang=de<CR>', { noremap = true, silent = true})
+keymap('n','<leader>ucs', ':set nospell<CR>',{ noremap = true, silent = true})
+keymap('n','<leader>ces', ':set spell spelllang=en<CR>',{ noremap = true, silent = true})
 
 
 

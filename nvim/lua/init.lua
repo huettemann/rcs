@@ -4,7 +4,8 @@ require('binds')
 
 local configs = require'nvim-treesitter.configs'
 configs.setup {
-ensure_installed = "maintained", -- Only use parsers that are maintained
+ensure_installed = "all", -- Only use parsers that are maintained
+-- ignore_install{"phpdoc"},
 highlight = { -- enable highlighting
   enable = true,
 },
