@@ -33,8 +33,12 @@ keymap('n','<leader>cs', ':set spell spelllang=de<CR>', { noremap = true, silent
 keymap('n','<leader>ucs', ':set nospell<CR>',{ noremap = true, silent = true})
 keymap('n','<leader>ces', ':set spell spelllang=en<CR>',{ noremap = true, silent = true})
 
-
-
+-- Tabs
+keymap('n','<leader>tn', ':tabnew<CR>',{ noremap = true, silent = true})
+keymap('n','<leader>tl', ':tabnext<CR>',{ noremap = true, silent = true})
+keymap('n','<leader>th', ':tabprevious<CR>',{ noremap = true, silent = true})
+keymap('n','<leader>tc', ':tabclose<CR>',{ noremap = true, silent = true})
+keymap('n','<leader>to', ':tabonly<CR>',{ noremap = true, silent = true})
 
 -- Lsp Bindings
 nkeymap('gd', ':lua vim.lsp.buf.definition()<cr>')
@@ -43,7 +47,7 @@ nkeymap('gi', ':lua vim.lsp.buf.implementation()<cr>')
 nkeymap('gw', ':lua vim.lsp.buf.document_symbol()<cr>')
 nkeymap('gw', ':lua vim.lsp.buf.workspace_symbol()<cr>')
 nkeymap('gr', ':lua vim.lsp.buf.references()<cr>')
-nkeymap('gt', ':lua vim.lsp.buf.type_definition()<cr>')
+nkeymap('gy', ':lua vim.lsp.buf.type_definition()<cr>')
 nkeymap('K', ':lua vim.lsp.buf.hover()<cr>')
 nkeymap('<c-k>', ':lua vim.lsp.buf.signature_help()<cr>')
 nkeymap('<leader>af', ':lua vim.lsp.buf.code_action()<cr>')
