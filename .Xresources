@@ -1,11 +1,11 @@
 !My Settings
 !! Transparency (0-1):
-st.alpha: 0.95
+st.alpha: 0.80
 st.alphaOffset: -0.05
 
 !! Doesent do anything???:
-*.alpha: 1.0
-*.alphaOffset: 0.0
+/* *.alpha: 1.0 */
+/* *.alphaOffset: 0.0 */
 !! Set a default font and font size as below:
 /* st.font: Monospace-11; */
 st.font: Source Code Pro Medium:pixelsize=15:antialias=true:autohint=true

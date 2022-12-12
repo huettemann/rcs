@@ -51,7 +51,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-tab>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
-let g:gruvbox_contrast_dark="soft"
+" let g:gruvbox_contrast_dark="soft"
 
 colorscheme gruvbox
 set background=dark
