@@ -1,8 +1,17 @@
+<<<<<<< HEAD
+<<<<<<<< HEAD:mutt.old/muttrc
 set editor="nvim"
 
 # Account schule@nhuettemann.de
 # source "~/.config/mutt/accSchule.muttrc"
 # folder-hook $folder 'source ~/.config/mutt/accSchule.muttrc'
+=======
+set editor="nvim"
+
+# Account schule@nhuettemann.de
+source "~/.config/mutt/accSchule.muttrc"
+folder-hook $folder 'source ~/.config/mutt/accSchule.muttrc'
+>>>>>>> 28c95b3c42ffd21d4224d869f052ea15d71a9474
 
 # Account nils_huettemann@mail.de
 source "~/.config/mutt/accMail.muttrc"
@@ -11,3 +20,12 @@ folder-hook $folder 'source ~/.config/mutt/accMail.muttrc'
 source alias
 source colors.muttrc
 source sidebar.muttrc
+<<<<<<< HEAD
+========
+# vim: filetype=neomuttrc
+source /usr/share/mutt-wizard/mutt-wizard.muttrc
+source /home/huette/.config/mutt/accounts/nils_huettemann@mail.de.muttrc
+macro index,pager i1 '<sync-mailbox><enter-command>source /home/huette/.config/mutt/accounts/nils_huettemann@mail.de.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to nils_huettemann@mail.de"
+>>>>>>>> 28c95b3c42ffd21d4224d869f052ea15d71a9474:mutt/muttrc
+=======
+>>>>>>> 28c95b3c42ffd21d4224d869f052ea15d71a9474
