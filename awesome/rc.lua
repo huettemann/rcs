@@ -629,6 +629,7 @@ autorunApps =
    "nm-applet",
    "xfce4-power-manager",
    "seaf-cli start",
+   "crond",
 
    -- "polkit-gnome-authentification-agent-1",
    -- "nm-applet",
