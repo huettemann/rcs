@@ -1,0 +1,27 @@
+# abook addressbook file
+
+[format]
+program=abook
+version=0.6.1
+
+
+[0]
+name=André Hilbig
+email=schule@ahilbig.de
+
+[1]
+name=Lutz Petri
+email=LutzPetri@gmx.de
+
+[2]
+name=Tennisschule Stefan Schneider
+email=info@tennisschuleschneider.de
+
+[3]
+name=Petra Hüttemann
+email=poetyhuettemann@web.de
+
+[4]
+name=Dohmen, Karsten
+email=Karsten.Dohmen@remscheid.de
+
