@@ -22,11 +22,14 @@ local freedesktop = require("freedesktop")
 -- My Widgets 
 local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
 local mysystray = wibox.widget.systray()
+local w = awful.widget.watch('bash -c "ls ~/.local/share/mail/nils_huettemann@mail.de/INBOX/new | wc -l"', 5)
 -- mysystray:set_base_size(20)
+local my_imagebox = wibox.widget.imagebox("/usr/share/icons/Arc/actions/22/mail-mark-unread.png", false)
 mytextbox = wibox.widget{
-    text = "foo",
+    text = "mail",
     align = 'center',
-    widget = wibox.widget.textbox
+    widget = my_imagebox,
+    widget = awful.widget.watch('bash -c "ls ~/.local/share/mail/nils_huettemann@mail.de/INBOX/new | wc -l"', 5),
 }
 mycmd = "echo t"
 
@@ -260,6 +263,7 @@ awful.screen.connect_for_each_screen(function(s)
             -- wibox.widget.systray(),
             mytextbox,
             myseperator,
+            -- my_imagebox,
             mysystray,
             battery_widget(),
             mytextclock,
