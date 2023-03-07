@@ -633,7 +633,8 @@ autorunApps =
    "keepassxc",
    "nm-applet",
    "xfce4-power-manager",
-   "seaf-cli start",
+   -- "seaf-cli start",
+   "seafile-applet",
    -- "sudo crond", (wird über systemctl start cronie.service gestartet)
 
    -- "polkit-gnome-authentification-agent-1",
