@@ -1,5 +1,9 @@
 # vim: filetype=neomuttrc
-set editor='nvim -c "set wrap textwidth=80 fo+=a"'
+# set editor='nvim -c ":set nowrap"'
+# set editor="nvim +'/^$/+1' -c 'set textwidth=0 wrap linebreak'"
+set editor="nvim +'/^$/+1' -c 'set textwidth=0'"
 source /usr/share/mutt-wizard/mutt-wizard.muttrc
 source /home/huette/.config/mutt/accounts/nils_huettemann@mail.de.muttrc
+# source /home/huette/.config/mutt/accounts/schule@nhuettemann.de.muttrc
 macro index,pager i1 '<sync-mailbox><enter-command>source /home/huette/.config/mutt/accounts/nils_huettemann@mail.de.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to nils_huettemann@mail.de"
+macro index,pager i2 '<sync-mailbox><enter-command>source /home/huette/.config/mutt/accounts/schule@nhuettemann.de.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to schule@nhuettemann.de"

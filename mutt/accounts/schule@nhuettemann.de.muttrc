@@ -1,0 +1,22 @@
+# vim: filetype=neomuttrc
+# muttrc file for account schule@nhuettemann.de
+set realname = "schule"
+set from = "schule@nhuettemann.de"
+set sendmail = "msmtp -a schule@nhuettemann.de"
+alias me schule <schule@nhuettemann.de>
+set folder = "/home/huette/.local/share/mail/schule@nhuettemann.de"
+set header_cache = /home/huette/.cache/mutt-wizard/schule@nhuettemann.de/headers
+set message_cachedir = /home/huette/.cache/mutt-wizard/schule@nhuettemann.de/bodies
+set mbox_type = Maildir
+set hostname = "nhuettemann.de"
+source /usr/share/mutt-wizard/switch.muttrc
+set spoolfile = +INBOX
+set postponed = +Drafts
+set trash = +Trash
+set record = +Sent
+
+macro index o "<shell-escape>mw -y schule@nhuettemann.de<enter>" "run mbsync to sync schule@nhuettemann.de"
+macro index \eg "<enter-command>unset wait_key<enter><shell-escape>gpg --list-secret-keys; printf 'Enter email ID of user to publish: '; read eID; printf 'Enter fingerprint of GPG key to publish: '; read eFGPT; /usr/libexec/gpg-wks-client --create \$eFGPT \$eID | msmtp --read-envelope-from --read-recipients -a schule@nhuettemann.de<enter>"  "publish GPG key to WKS provider"
+macro index \eh "<pipe-message>/usr/libexec/gpg-wks-client --receive | msmtp --read-envelope-from --read-recipients -a schule@nhuettemann.de<enter>" "confirm GPG publication"
+
+mailboxes "=Junk" "=Trash" "=Drafts" "=Sent" "=INBOX"
