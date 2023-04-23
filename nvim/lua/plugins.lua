@@ -26,6 +26,8 @@ return require('packer').startup(
         use 'tpope/vim-surround'
         use 'michaeljsmith/vim-indent-object'
         use 'christoomey/vim-system-copy'
+        use 'thomasfaingnaert/vim-lsp-snippets'
+        use 'thomasfaingnaert/vim-lsp-ultisnips'
     end
 )
 

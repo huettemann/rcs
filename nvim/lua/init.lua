@@ -20,7 +20,7 @@ vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 local lsp_installer = require("nvim-lsp-installer")
 lsp_installer.on_server_ready(function(server)
   local opts = {}
-  if server.name == "sumneko_lua" then
+  if server.name == "lua_ls" then
     opts = {
       -- cmd = {"/home/huette/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/bin/main.lua", "-E", "/home/huette/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/bin/main.lua"};
       settings = {
@@ -94,10 +94,32 @@ end)
   })
 
   -- Setup lspconfig.
-  local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-  -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-  require('lspconfig')['sumneko_lua'].setup {
-    capabilities = capabilities
-  }
+  -- local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
+  -- -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+  -- require('lspconfig')['lua_ls'].setup {
+  --   capabilities = capabilities
+  -- }
 
+require'lspconfig'.lua_ls.setup {
+  settings = {
+    Lua = {
+      runtime = {
+        -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
+        version = 'LuaJIT',
+      },
+      diagnostics = {
+        -- Get the language server to recognize the `vim` global
+        globals = {'vim'},
+      },
+      workspace = {
+        -- Make the server aware of Neovim runtime files
+        library = vim.api.nvim_get_runtime_file("", true),
+      },
+      -- Do not send telemetry data containing a randomized but unique identifier
+      telemetry = {
+        enable = false,
+      },
+    },
+  },
+}
 

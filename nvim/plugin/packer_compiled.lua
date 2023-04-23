@@ -164,6 +164,16 @@ _G.packer_plugins = {
     path = "/home/huette/.local/share/nvim/site/pack/packer/start/vim-indent-object",
     url = "https://github.com/michaeljsmith/vim-indent-object"
   },
+  ["vim-lsp-snippets"] = {
+    loaded = true,
+    path = "/home/huette/.local/share/nvim/site/pack/packer/start/vim-lsp-snippets",
+    url = "https://github.com/thomasfaingnaert/vim-lsp-snippets"
+  },
+  ["vim-lsp-ultisnips"] = {
+    loaded = true,
+    path = "/home/huette/.local/share/nvim/site/pack/packer/start/vim-lsp-ultisnips",
+    url = "https://github.com/thomasfaingnaert/vim-lsp-ultisnips"
+  },
   ["vim-snippets"] = {
     loaded = true,
     path = "/home/huette/.local/share/nvim/site/pack/packer/start/vim-snippets",
