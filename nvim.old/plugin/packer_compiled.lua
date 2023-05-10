@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["async.vim"] = {
+    loaded = true,
+    path = "/home/huette/.local/share/nvim/site/pack/packer/start/async.vim",
+    url = "https://github.com/prabirshrestha/async.vim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/huette/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -83,6 +88,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/huette/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
     url = "https://github.com/hrsh7th/cmp-cmdline"
+  },
+  ["cmp-lsp-signature-help"] = {
+    loaded = true,
+    path = "/home/huette/.local/share/nvim/site/pack/packer/start/cmp-lsp-signature-help",
+    url = "https://github.com/hrsh7th/cmp-lsp-signature-help"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
@@ -113,6 +123,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/huette/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
+  },
+  ["nvim-autopairs"] = {
+    config = { "\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0" },
+    loaded = true,
+    path = "/home/huette/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -164,6 +180,11 @@ _G.packer_plugins = {
     path = "/home/huette/.local/share/nvim/site/pack/packer/start/vim-indent-object",
     url = "https://github.com/michaeljsmith/vim-indent-object"
   },
+  ["vim-lsp"] = {
+    loaded = true,
+    path = "/home/huette/.local/share/nvim/site/pack/packer/start/vim-lsp",
+    url = "https://github.com/prabirshrestha/vim-lsp"
+  },
   ["vim-lsp-snippets"] = {
     loaded = true,
     path = "/home/huette/.local/share/nvim/site/pack/packer/start/vim-lsp-snippets",
@@ -197,6 +218,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

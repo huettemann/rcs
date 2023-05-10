@@ -44,8 +44,8 @@ inoremap <c-space> <Nop>
 " Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
 " - https://github.com/Valloric/YouCompleteMe
 " - https://github.com/nvim-lua/completion-nvim
-let g:UltiSnipsExpandTrigger="<a-space>"
-let g:UltiSnipsJumpForwardTrigger="<A-tab>"
+let g:UltiSnipsExpandTrigger="<A-tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<c-tab>"
 
 " If you want :UltiSnipsEdit to split your window.
@@ -56,16 +56,16 @@ let g:UltiSnipsEditSplit="vertical"
 colorscheme gruvbox
 set background=dark
 
-if executable('clangd')
-    augroup vim_lsp_cpp
-        autocmd!
-        autocmd User lsp_setup call lsp#register_server({
-                    \ 'name': 'clangd',
-                    \ 'cmd': {server_info->['clangd']},
-                    \ 'whitelist': ['c', 'cpp', 'objc', 'objcpp', 'cc'],
-                    \ })
-	autocmd FileType c,cpp,objc,objcpp,cc setlocal omnifunc=lsp#complete
-    augroup end
-endif
+" if executable('clangd')
+"     augroup vim_lsp_cpp
+"         autocmd!
+"         autocmd User lsp_setup call lsp#register_server({
+"                     \ 'name': 'clangd',
+"                     \ 'cmd': {server_info->['clangd']},
+"                     \ 'whitelist': ['c', 'cpp', 'objc', 'objcpp', 'cc'],
+"                     \ })
+" 	autocmd FileType c,cpp,objc,objcpp,cc setlocal omnifunc=lsp#complete
+"     augroup end
+" endif
 
-set completeopt+=menuone
+" set completeopt+=menuone

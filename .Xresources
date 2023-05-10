@@ -9,6 +9,7 @@ st.alphaOffset: -0.05
 !! Set a default font and font size as below:
 /* st.font: Monospace-11; */
 st.font: Source Code Pro Medium:pixelsize=15:antialias=true:autohint=true
+/* st.font: HackNerdFont:pixelsize=15:antialias=true:autohint=true */
 
 
 /* ! Color meanings         */

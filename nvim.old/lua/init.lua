@@ -68,6 +68,7 @@ end)
     },
     sources = cmp.config.sources({
       { name = 'nvim_lsp' },
+      { name = 'nvim_lsp_signature_help' },
       -- { name = 'vsnip' }, -- For vsnip users.
       -- { name = 'luasnip' }, -- For luasnip users.
       { name = 'ultisnips' }, -- For ultisnips users.
@@ -76,6 +77,17 @@ end)
       { name = 'buffer' },
     })
   })
+
+
+-- autopairs
+    require('nvim-autopairs').setup({
+  disable_filetype = { "TelescopePrompt" , "vim" },
+})
+    local cmp_autopairs = require('nvim-autopairs.completion.cmp')
+    cmp.event:on(
+        'confirm_done',
+        cmp_autopairs.on_confirm_done()
+    )
 
   -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
   cmp.setup.cmdline('/', {
@@ -94,7 +106,7 @@ end)
   })
 
   -- Setup lspconfig.
-  -- local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
+  local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
   -- -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
   -- require('lspconfig')['lua_ls'].setup {
   --   capabilities = capabilities
@@ -123,3 +135,28 @@ require'lspconfig'.lua_ls.setup {
   },
 }
 
+require'lspconfig'.pylsp.setup {
+    capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities()),
+    settings = {
+        python = {
+            diagnostics = {
+                globals = {'vim'},
+            },
+        },
+        pylsp = {
+            plugins = {
+                jedi_signature_help = {
+                    enable = true,
+                },
+                jedi_completion = {
+                    enable = true,
+                    include_params = true,
+                },
+            },
+        },
+    },
+}
+
+require('lspconfig').jdtls.setup{
+    capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities()),
+}
