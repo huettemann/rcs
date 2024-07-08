@@ -7,3 +7,4 @@ source /home/huette/.config/mutt/accounts/nils_huettemann@mail.de.muttrc
 # source /home/huette/.config/mutt/accounts/schule@nhuettemann.de.muttrc
 macro index,pager i1 '<sync-mailbox><enter-command>source /home/huette/.config/mutt/accounts/nils_huettemann@mail.de.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to nils_huettemann@mail.de"
 macro index,pager i2 '<sync-mailbox><enter-command>source /home/huette/.config/mutt/accounts/schule@nhuettemann.de.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to schule@nhuettemann.de"
+macro index,pager i3 '<sync-mailbox><enter-command>source /home/huette/.config/mutt/accounts/nhuettemann@gyho.de.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to nhuettemann@gyho.de"
